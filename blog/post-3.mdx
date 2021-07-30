@@ -1,0 +1,23 @@
+---
+title: "Adding Gatsby Plugins"
+date: "2021-07-25"
+---
+
+### Key Gatsby Concept: Adding a plugin to your site
+
+Here’s a more detailed breakdown of the steps to add a plugin to your site:
+
+1. Install the plugin using npm.
+``` npm install plugin-name ```
+
+2. Configure the plugin in your `gatsby-config.js` file.
+
+Your gatsby-config.js file contains information about your site, including configuration for plugins. You can add a plugin to the plugins array.
+
+Some plugins require extra configuration options. In that case, you’ll add an object to the plugins array (instead of a string), as shown below. (Check the plugin README in the Gatsby Plugin Library for more details on what that options object should look like.)
+
+3. Use the plugin features in your site.
+
+Now that you’ve set up the plugin, you can use it in your Gatsby site as needed.
+
+The specifics of this step will be different based on what the plugin does. Sometimes, the plugin might have a component or function that you can import and use in your site. Other times, you might not need to do anything extra at all. Check the plugin’s README for more details.
